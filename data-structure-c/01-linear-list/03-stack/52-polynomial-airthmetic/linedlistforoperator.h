@@ -10,7 +10,7 @@
 #include <stdio.h>
 
 typedef struct LINK_NODE_OPERATOR {
-    double operator;
+    char operator;
     struct LINK_NODE_OPERATOR *next;
 } LinkNodeOperator;
 

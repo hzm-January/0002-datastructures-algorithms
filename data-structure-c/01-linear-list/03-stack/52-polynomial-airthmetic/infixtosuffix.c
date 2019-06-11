@@ -5,23 +5,39 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <stdbool.h>
+#include <conio.h>
 #include "infixtosuffix.h"
 #include "linedlistforoperator.h"
 
 
 void inputExpression() {
     char *expression = (char *) malloc(100 * sizeof(char));
-    scanf("%s", expression);
-    printf("%s\n", expression);
-    char p = *expression;
-    printf("%c", p);
-
+////    scanf("%s", expression);
+////    printf("%s\n", expression);
+////    char p = *expression;
+////    printf("%c", p);
+////
+////    addLast('#');
+////    int i = 0;
+////    while (p = expression[i++]);
+////    expression[i] = '#';
+////    i = 0;
+////    p = *expression;
+    char temp = 0;
+    int index = 0;
+    expression[index++] = '#';
+    while (scanf("%1c", &temp), temp!= '#') {
+        if (temp == '\n') {
+            continue;
+        }
+        expression[index++] = temp;
+    }
     addLast('#');
-    int i = 0;
-    while (p = expression[i++]);
-    expression[i] = '#';
-    i = 0;
-    p = *expression;
+    expression[index++]='#';
+    expression[index++]='\0';
+//    printf("%s\n", expression);
+    char p = 0;
+    int i = 1;
     while (p = expression[i++]) {
         switch (p) {
             case '#':
@@ -37,10 +53,13 @@ void inputExpression() {
                     addLast(p);
                 } else if (isp(getLast()) > icp(p)) {
                     char operator = delLast();
-                    printf("%c", operator);
+                    if (operator != '(' && operator != ')') {
+                        printf("%c", operator);
+                    }
                 }
+                break;
             default:
-                printf(" %d ", p);
+                printf(" %c ", p);
         }
     }
 }

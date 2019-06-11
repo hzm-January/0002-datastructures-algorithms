@@ -3,6 +3,7 @@
 //
 #include <stdio.h>
 #include <stdlib.h>
+#include <conio.h>
 //#include "polynomialairthmetic.h"
 #include "infixtosuffix.h"
 
@@ -11,9 +12,15 @@ int main(int argc, char *argv[]) {
     sentinelOperator->operator = 0;
     sentinelOperator->next = NULL;
     inputExpression();
+
+//    char *test = (char *) malloc(100 * sizeof(char));
 //    char aaa = 0;
-//    aaa = getchar();
-//    printf("%c", aaa);
+//    aaa = getche();
+////    aaa = getchar();
+//    printf("%c\n", aaa);
+//    printf("%s\n", test);
+//    test[0]=aaa;
+//    printf("%s",test);
 //    sentinel = (LinkNode *) malloc(sizeof(LinkNode));
 //    sentinel->operand = 0.00;
 //    sentinel->next = NULL;
