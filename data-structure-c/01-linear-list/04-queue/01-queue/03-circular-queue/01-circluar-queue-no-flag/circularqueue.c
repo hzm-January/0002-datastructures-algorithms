@@ -6,12 +6,15 @@
 
 void enQueue(int value) {
     isFull();
-    queue[tail++] = value;
+    queue[tail] = value;
+    tail = (tail + 1) % MAX_SIZE;
 }
 
 int deQueue() {
     isEmpty();
-    return queue[head++];
+    int value = queue[head];
+    head = (head + 1) % MAX_SIZE;
+    return value;
 }
 
 int getFront();

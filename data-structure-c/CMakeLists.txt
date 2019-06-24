@@ -71,8 +71,14 @@ add_executable(queue_linked_queue
         01-linear-list/04-queue/queue.h
         )
 add_executable(queue_circular_queue
-        01-linear-list/04-queue/01-queue/03-circular-queue/circularqueue.c
-        01-linear-list/04-queue/01-queue/03-circular-queue/circularqueue.h
-        01-linear-list/04-queue/01-queue/03-circular-queue/main.c
+        01-linear-list/04-queue/01-queue/03-circular-queue/01-circluar-queue-no-flag/circularqueue.c
+        01-linear-list/04-queue/01-queue/03-circular-queue/01-circluar-queue-no-flag/circularqueue.h
+        01-linear-list/04-queue/01-queue/03-circular-queue/01-circluar-queue-no-flag/main.c
+        01-linear-list/04-queue/queue.h
+        )
+add_executable(queue_circular_queue_flag
+        01-linear-list/04-queue/01-queue/03-circular-queue/02-circluar-queue-flag/circularqueue.c
+        01-linear-list/04-queue/01-queue/03-circular-queue/02-circluar-queue-flag/circularqueue.h
+        01-linear-list/04-queue/01-queue/03-circular-queue/02-circluar-queue-flag/main.c
         01-linear-list/04-queue/queue.h
         )

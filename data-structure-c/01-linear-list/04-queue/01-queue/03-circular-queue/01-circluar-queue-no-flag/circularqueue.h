@@ -5,7 +5,7 @@
 #ifndef DATA_STRUCTURE_C_CIRCULARQUEUE_H
 #define DATA_STRUCTURE_C_CIRCULARQUEUE_H
 
-#include "../../queue.h"
+#include "../../../queue.h"
 #define MAX_SIZE 10
 int queue[MAX_SIZE];
 int head; //头指针
