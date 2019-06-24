@@ -82,3 +82,11 @@ add_executable(queue_circular_queue_flag
         01-linear-list/04-queue/01-queue/03-circular-queue/02-circluar-queue-flag/main.c
         01-linear-list/04-queue/queue.h
         )
+add_executable(queue_pascal_triangle
+        01-linear-list/04-queue/queue.h
+        01-linear-list/04-queue/01-queue/02-linked-queue/linkedqueue.h
+        01-linear-list/04-queue/01-queue/02-linked-queue/linkedqueue.c
+        01-linear-list/04-queue/51-pascal-triangle/pascaltriangle.c
+        01-linear-list/04-queue/51-pascal-triangle/pascaltriangle.h
+        01-linear-list/04-queue/51-pascal-triangle/main.c
+        )
