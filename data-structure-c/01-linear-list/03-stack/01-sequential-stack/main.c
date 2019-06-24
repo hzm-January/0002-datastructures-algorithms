@@ -1,5 +1,5 @@
 //
-// Created by asus on 2019/5/29.
+// Created by hzm on 2019/5/29.
 //
 #include "../stack.h"
 #include "sequentialstack.h"

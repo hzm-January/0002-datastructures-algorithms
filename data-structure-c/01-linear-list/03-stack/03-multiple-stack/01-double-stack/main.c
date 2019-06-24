@@ -1,7 +1,7 @@
 #include "doublestack.h"
 
 //
-// Created by asus on 2019/6/5.
+// Created by hzm on 2019/6/5.
 //
 int lowIndex = -1;
 int highIndex = MAX_SIZE;

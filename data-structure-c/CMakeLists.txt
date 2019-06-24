@@ -49,3 +49,30 @@ add_executable(stack_polynomial_airthmetic_double
         01-linear-list/03-stack/52-polynomial-airthmetic/polynomialairthmetic.c
         01-linear-list/03-stack/52-polynomial-airthmetic/polynomialairthmetic.h
         01-linear-list/03-stack/52-polynomial-airthmetic/infixtosuffix.c 01-linear-list/03-stack/52-polynomial-airthmetic/infixtosuffix.h 01-linear-list/03-stack/52-polynomial-airthmetic/linedlistforoperator.c 01-linear-list/03-stack/52-polynomial-airthmetic/linedlistforoperator.h)
+add_executable(recursion_fibonacci_recursion
+        51-recursion/01-fibonacci-sequence/01-fibonacci-sequence-recursion/main.c
+        51-recursion/01-fibonacci-sequence/01-fibonacci-sequence-recursion/fibonacci.c
+        51-recursion/01-fibonacci-sequence/01-fibonacci-sequence-recursion/fibonacci.h
+        )
+add_executable(recursion_fibonacci_non_recursion
+        51-recursion/01-fibonacci-sequence/02-fibonacci-sequence-non-recursion/main.c
+        51-recursion/01-fibonacci-sequence/02-fibonacci-sequence-non-recursion/fibonacci.c
+        51-recursion/01-fibonacci-sequence/02-fibonacci-sequence-non-recursion/fibonacci.h
+        )
+add_executable(queue_sequential_queue
+        01-linear-list/04-queue/01-queue/01-sequential-queue/main.c
+        01-linear-list/04-queue/01-queue/01-sequential-queue/sequentialqueue.c
+        01-linear-list/04-queue/queue.h
+        01-linear-list/04-queue/01-queue/01-sequential-queue/sequentialqueue.h)
+add_executable(queue_linked_queue
+        01-linear-list/04-queue/01-queue/02-linked-queue/linkedqueue.c
+        01-linear-list/04-queue/01-queue/02-linked-queue/linkedqueue.h
+        01-linear-list/04-queue/01-queue/02-linked-queue/main.c
+        01-linear-list/04-queue/queue.h
+        )
+add_executable(queue_circular_queue
+        01-linear-list/04-queue/01-queue/03-circular-queue/circularqueue.c
+        01-linear-list/04-queue/01-queue/03-circular-queue/circularqueue.h
+        01-linear-list/04-queue/01-queue/03-circular-queue/main.c
+        01-linear-list/04-queue/queue.h
+        )

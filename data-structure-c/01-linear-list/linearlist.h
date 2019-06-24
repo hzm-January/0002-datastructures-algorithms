@@ -1,5 +1,5 @@
 //
-// Created by asus on 2019/5/27.
+// Created by hzm on 2019/5/27.
 //
 
 #ifndef DATA_STRUCTURE_C_LINEARLIST_H
