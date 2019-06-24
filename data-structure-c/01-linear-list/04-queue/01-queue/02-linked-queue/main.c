@@ -1,5 +1,5 @@
 //
-// Created by asus on 2019/6/18.
+// Created by hzm on 2019/6/18.
 //
 #include "linkedqueue.h"
 int main(int argc, char *argv[]) {

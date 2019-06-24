@@ -1,5 +1,5 @@
 //
-// Created by asus on 2019/6/18.
+// Created by hzm on 2019/6/18.
 //
 
 #ifndef DATA_STRUCTURE_C_SEQUENTIALQUEUE_H

@@ -1,5 +1,5 @@
 //
-// Created by asus on 2019/6/24.
+// Created by hzm on 2019/6/24.
 //
 #include "pascaltriangle.h"
 int main(int argc, char * argv[]){

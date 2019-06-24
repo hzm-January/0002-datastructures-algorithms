@@ -90,3 +90,9 @@ add_executable(queue_pascal_triangle
         01-linear-list/04-queue/51-pascal-triangle/pascaltriangle.h
         01-linear-list/04-queue/51-pascal-triangle/main.c
         )
+add_executable(queue_priority_queue
+        01-linear-list/04-queue/01-queue/04-priority-queue/priorityqueue.h
+        01-linear-list/04-queue/01-queue/04-priority-queue/priorityqueue.c
+        01-linear-list/04-queue/01-queue/04-priority-queue/main.c
+        01-linear-list/04-queue/queue.h
+        )
