@@ -19,7 +19,7 @@ int head;
 int tail;
 void freeNode(LinkNode * delNode);
 
-void enQueue(int value, int priority);
+bool enQueue(int value, int priority);
 int deQueue();
 int getFront();
 bool isEmpty();
