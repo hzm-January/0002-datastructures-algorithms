@@ -3,7 +3,7 @@ project(data_structure_c C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(data_structure_c main.c 01-linear-list/02-linked-list/linknode.h 01-linear-list/linearlist.h)
+add_executable(data_structure_c 01-linear-list/02-linked-list/linknode.h 01-linear-list/linearlist.h)
 add_executable(circular_list_with_tail 01-linear-list/02-linked-list/02-circular-list/02-circular-list-with-tail/main.c 01-linear-list/02-linked-list/linknode.h 01-linear-list/linearlist.h 01-linear-list/02-linked-list/02-circular-list/02-circular-list-with-tail/circularlistwithtail.c 01-linear-list/02-linked-list/02-circular-list/02-circular-list-with-tail/circularlistwithtail.h)
 add_executable(circular_list_josephus_problem ./01-linear-list/02-linked-list/51-josephus-problem/main.c 01-linear-list/02-linked-list/linknode.h 01-linear-list/linearlist.h 01-linear-list/02-linked-list/02-circular-list/02-circular-list-with-tail/circularlistwithtail.c 01-linear-list/02-linked-list/02-circular-list/02-circular-list-with-tail/circularlistwithtail.h)
 add_executable(doubly_linked_list_without_sentinel_c 01-linear-list/02-linked-list/03-doubly-linked-list/01-doubly-linked-list-without-sentinel/main.c 01-linear-list/02-linked-list/linknode.h 01-linear-list/linearlist.h 01-linear-list/02-linked-list/03-doubly-linked-list/01-doubly-linked-list-without-sentinel/doublylinkedlist.h 01-linear-list/02-linked-list/03-doubly-linked-list/01-doubly-linked-list-without-sentinel/doublylinkedlist.c)
@@ -95,4 +95,19 @@ add_executable(queue_priority_queue
         01-linear-list/04-queue/01-queue/04-priority-queue/priorityqueue.c
         01-linear-list/04-queue/01-queue/04-priority-queue/main.c
         01-linear-list/04-queue/queue.h
+        )
+add_executable(tree_fundamental_tree_list
+        02-nonlinear-list/01-tree/01-fundamental-tree/01-fundamental-tree-list/fundamentaltree.c
+        02-nonlinear-list/01-tree/01-fundamental-tree/01-fundamental-tree-list/fundamentaltree.h
+        02-nonlinear-list/01-tree/01-fundamental-tree/01-fundamental-tree-list/main.c
+        )
+add_executable(tree_fundamental_tree_array
+        02-nonlinear-list/01-tree/01-fundamental-tree/02-fundamental-tree-array/fundamentaltree.c
+        02-nonlinear-list/01-tree/01-fundamental-tree/02-fundamental-tree-array/fundamentaltree.h
+        02-nonlinear-list/01-tree/01-fundamental-tree/02-fundamental-tree-array/main.c
+        )
+add_executable(tree_binary_search_tree
+        02-nonlinear-list/01-tree/02-binary-tree/02-binary-search-tree/binarysearchtree.c
+        02-nonlinear-list/01-tree/02-binary-tree/02-binary-search-tree/binarysearchtree.h
+        02-nonlinear-list/01-tree/02-binary-tree/02-binary-search-tree/main.c
         )
