@@ -111,3 +111,18 @@ add_executable(tree_binary_search_tree
         02-nonlinear-list/02-tree/02-binary-tree/02-binary-search-tree/binarysearchtree.h
         02-nonlinear-list/02-tree/02-binary-tree/02-binary-search-tree/main.c
         )
+add_executable(matrix_ordinary_matrix
+        02-nonlinear-list/01-matrix/01-ordinary-matrix/main.c
+        02-nonlinear-list/01-matrix/01-ordinary-matrix/ordinarymatrix.c
+        02-nonlinear-list/01-matrix/01-ordinary-matrix/ordinarymatrix.h
+        )
+add_executable(matrix_particular_matrix_upper_triangular
+        02-nonlinear-list/01-matrix/02-particular-matrix/01-symmetric-matrix/01-upper-triangular-matrix/main.c
+        02-nonlinear-list/01-matrix/02-particular-matrix/01-symmetric-matrix/01-upper-triangular-matrix/belowtriangularmatrix.c
+        02-nonlinear-list/01-matrix/02-particular-matrix/01-symmetric-matrix/01-upper-triangular-matrix/uppertriangularmatrix.h
+        )
+add_executable(matrix_particular_matrix_below_triangular
+        02-nonlinear-list/01-matrix/02-particular-matrix/01-symmetric-matrix/02-below-triangular-matrix/main.c
+        02-nonlinear-list/01-matrix/02-particular-matrix/01-symmetric-matrix/02-below-triangular-matrix/belowtriangularmatrix.c
+        02-nonlinear-list/01-matrix/02-particular-matrix/01-symmetric-matrix/02-below-triangular-matrix/belowtriangularmatrix.h
+        )
