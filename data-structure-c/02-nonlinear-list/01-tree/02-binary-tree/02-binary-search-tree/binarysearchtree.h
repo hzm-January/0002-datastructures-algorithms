@@ -15,6 +15,10 @@ typedef struct TREE_NODE {
 } TreeNode;
 // tree root
 TreeNode *root;
+//
+int findMax();
+int findMin();
+int findParent(int data);
 bool insert(int data);
 void delete(int data);
 TreeNode *createNode(int data);

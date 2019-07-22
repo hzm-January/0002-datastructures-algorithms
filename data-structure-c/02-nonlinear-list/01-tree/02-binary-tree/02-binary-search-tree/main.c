@@ -10,12 +10,19 @@ int main(int argv, char * argc[]){
     insert(2);
     insert(8);
     insert(7);
-    prePrint(root);
+//    prePrint(root);
+//    printf("\n");
+//    delete(2);
+//    prePrint(root);
+//    printf("\n");
+//    delete(5);
+//    prePrint(root);
+//    printf("\n");
+    inPrint(root);
     printf("\n");
-    delete(2);
-    prePrint(root);
-    printf("\n");
-    delete(5);
-    prePrint(root);
-    printf("\n");
+    printf("max: %d\n", findMax());
+    printf("min: %d\n", findMin());
+    printf("%d : %d\n", findMax(), findParent(findMax()));
+    printf("%d : %d\n", 5, findParent(5));
+    printf("%d : %d\n", 5, findParent(12));
 }

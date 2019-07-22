@@ -31,7 +31,7 @@ bool insert(int data) {
     return true;
 }
 
-void delete(int data){
+void delete(int data) {
     TreeNode *p = root;
     TreeNode *pre = NULL;
     while (p != NULL && p->value != data) {
@@ -101,8 +101,8 @@ void inPrint(TreeNode *node) {
     if (node == NULL) {
         return;
     }
-    printf("%d\t", node->value);
     inPrint(node->left);
+    printf("%d\t", node->value);
     inPrint(node->right);
 }
 
@@ -110,7 +110,54 @@ void postPrint(TreeNode *node) {
     if (node == NULL) {
         return;
     }
-    printf("%d\t", node->value);
     postPrint(node->left);
     postPrint(node->right);
+    printf("%d\t", node->value);
+}
+
+int findMax() {
+    TreeNode *p = root;
+    while (p != NULL && p->right != NULL) {
+        p = p->right;
+    }
+    if (p == NULL) {
+        printf("this tree is empty");
+        return 0;
+    }
+    return p->value;
+}
+
+int findMin(){
+    TreeNode *p = root;
+    while (p != NULL && p->left != NULL) {
+        p = p->left;
+    }
+    if (p == NULL) {
+        printf("this tree is empty");
+        return 0;
+    }
+    return p->value;
+}
+
+int findParent(int data){
+    TreeNode * p = root;
+    TreeNode * pp = NULL;
+    while (p != NULL && p->value != data) {
+        pp = p;
+        if (data > p->value) {
+            p = p->right;
+        } else {
+            p = p->left;
+        }
+    }
+    if (pp == NULL) {
+        // 树为空
+        // 树只有根节点
+        return -1;
+    }
+    if (p == NULL) {
+        printf(" this node is not in the tree \n");
+        return -1;
+    }
+    return pp->value;
 }
