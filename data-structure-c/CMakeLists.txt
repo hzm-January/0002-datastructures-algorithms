@@ -97,17 +97,17 @@ add_executable(queue_priority_queue
         01-linear-list/04-queue/queue.h
         )
 add_executable(tree_fundamental_tree_list
-        02-nonlinear-list/01-tree/01-fundamental-tree/01-fundamental-tree-list/fundamentaltree.c
-        02-nonlinear-list/01-tree/01-fundamental-tree/01-fundamental-tree-list/fundamentaltree.h
-        02-nonlinear-list/01-tree/01-fundamental-tree/01-fundamental-tree-list/main.c
+        02-nonlinear-list/02-tree/01-fundamental-tree/01-fundamental-tree-list/fundamentaltree.c
+        02-nonlinear-list/02-tree/01-fundamental-tree/01-fundamental-tree-list/fundamentaltree.h
+        02-nonlinear-list/02-tree/01-fundamental-tree/01-fundamental-tree-list/main.c
         )
 add_executable(tree_fundamental_tree_array
-        02-nonlinear-list/01-tree/01-fundamental-tree/02-fundamental-tree-array/fundamentaltree.c
-        02-nonlinear-list/01-tree/01-fundamental-tree/02-fundamental-tree-array/fundamentaltree.h
-        02-nonlinear-list/01-tree/01-fundamental-tree/02-fundamental-tree-array/main.c
+        02-nonlinear-list/02-tree/01-fundamental-tree/02-fundamental-tree-array/fundamentaltree.c
+        02-nonlinear-list/02-tree/01-fundamental-tree/02-fundamental-tree-array/fundamentaltree.h
+        02-nonlinear-list/02-tree/01-fundamental-tree/02-fundamental-tree-array/main.c
         )
 add_executable(tree_binary_search_tree
-        02-nonlinear-list/01-tree/02-binary-tree/02-binary-search-tree/binarysearchtree.c
-        02-nonlinear-list/01-tree/02-binary-tree/02-binary-search-tree/binarysearchtree.h
-        02-nonlinear-list/01-tree/02-binary-tree/02-binary-search-tree/main.c
+        02-nonlinear-list/02-tree/02-binary-tree/02-binary-search-tree/binarysearchtree.c
+        02-nonlinear-list/02-tree/02-binary-tree/02-binary-search-tree/binarysearchtree.h
+        02-nonlinear-list/02-tree/02-binary-tree/02-binary-search-tree/main.c
         )
