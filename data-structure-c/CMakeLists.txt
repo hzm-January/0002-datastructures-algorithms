@@ -126,3 +126,8 @@ add_executable(matrix_particular_matrix_below_triangular
         02-nonlinear-list/01-matrix/02-particular-matrix/01-symmetric-matrix/02-below-triangular-matrix/belowtriangularmatrix.c
         02-nonlinear-list/01-matrix/02-particular-matrix/01-symmetric-matrix/02-below-triangular-matrix/belowtriangularmatrix.h
         )
+add_executable(matrix_particular_matrix_three_diagonal
+        02-nonlinear-list/01-matrix/02-particular-matrix/01-symmetric-matrix/03-three-diagonal-matrix/main.c
+        02-nonlinear-list/01-matrix/02-particular-matrix/01-symmetric-matrix/03-three-diagonal-matrix/threediagonalmatrix.c
+        02-nonlinear-list/01-matrix/02-particular-matrix/01-symmetric-matrix/03-three-diagonal-matrix/threediagonalmatrix.h
+        )
