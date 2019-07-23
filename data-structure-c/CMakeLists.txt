@@ -131,3 +131,9 @@ add_executable(matrix_particular_matrix_three_diagonal
         02-nonlinear-list/01-matrix/02-particular-matrix/01-symmetric-matrix/03-three-diagonal-matrix/threediagonalmatrix.c
         02-nonlinear-list/01-matrix/02-particular-matrix/01-symmetric-matrix/03-three-diagonal-matrix/threediagonalmatrix.h
         )
+add_executable(matrix_particular_matrix_multi_diagonal
+        02-nonlinear-list/01-matrix/02-particular-matrix/01-symmetric-matrix/04-multi-diagonal-matrix/main.c
+        02-nonlinear-list/01-matrix/02-particular-matrix/01-symmetric-matrix/04-multi-diagonal-matrix/multidiagonalmatrix.c
+        02-nonlinear-list/01-matrix/02-particular-matrix/01-symmetric-matrix/04-multi-diagonal-matrix/multidiagonalmatrix.h
+        )
+
