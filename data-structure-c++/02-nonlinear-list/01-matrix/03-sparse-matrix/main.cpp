@@ -20,5 +20,11 @@ int main(int argc, char *argv[]) {
     cout << "----- matrix add -----" << endl;
     const SparseMatrix<int> &addResult = sparseMatrix.add(transposeSimple);
     cout << addResult;
+    cout << "----- matrix multiply -----" << endl;
+    SparseMatrix<int> sparseMatrix2(100);
+    cin >> sparseMatrix2;
+    cout << sparseMatrix2;
+    const SparseMatrix<int> &multiplyResult = sparseMatrix.multiply(sparseMatrix2);
+    cout << multiplyResult;
     return 0;
 }

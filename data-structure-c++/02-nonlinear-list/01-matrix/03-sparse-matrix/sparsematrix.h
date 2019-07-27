@@ -247,54 +247,42 @@ void SparseMatrix<T>::sort(Trituple<T> *h, int size) {
 
 /**
  * 矩阵相乘
- *
+ * 复杂度O(A.Terms*B.Cols)
  * @param x
  * @return
  */
 template<class T>
 SparseMatrix<T> SparseMatrix<T>::multiply(const SparseMatrix<T> &x) {
     SparseMatrix<T> result(maxTerms);
-    //扫描乘数矩阵，统计被乘矩阵中的所有行元素个数
-    int *rowSize = new int[x.Rows];
-    memset(rowSize, 0, sizeof(int) * x.Rows);
-    for (int i = 0; i < x.Terms; ++i) {
-        rowSize[x.smArray[i].row]++;
-    }
-    //统计乘数矩阵每行开始元素在被乘矩阵的三元组表中的索引
-    int *rowStart = new int[x.Rows];
-    memset(rowStart, 0, sizeof(int) * x.Rows);
-    for (int j = 1; j < x.Terms; ++j) {
-        rowStart[j] = rowStart[j - 1] + rowSize[j - 1];
-    }
-
     //遍历被乘矩阵，取出(a,b)坐标的元素，获取乘数矩阵中b行的每个元素(b,*)，依次相乘并累加到(a,*)上
-    int current = 0, lastInResult = 0, RowA = 0, RowB = 0;
-
+    int current = 0, lastInResult = 0, RowA = 0, ColsB = 0, currentB = 0;
+    T *temp = new T[x.Cols]; //A矩阵当前行和B矩阵每一列每个元素相乘的叠加结果
+    int *colsStartCpy = new int[x.Cols];
     while (current < Terms) {
+        int indexB = 0;
         RowA = smArray[current].row; //A矩阵的当前行行号
-        T *temp = new T[x.Cols]; //A矩阵当前行和B矩阵每一列每个元素相乘的叠加结果
+        memset(temp, 0, sizeof(int) * x.Cols);
         while (current < Terms && smArray[current].row == RowA) { //取A矩阵中RowA行每一个元素
-            // 依次取出A矩阵中RowA行的元素(a,b)，并与对应的B矩阵中的(b,*)相乘
-            RowB = smArray[current].col;
-            for (int i = rowStart[RowB]; i < rowStart[RowB + 1]; ++i) { //取B矩阵中对应RowA矩阵当前元素列号相等行的每一个元素
-                temp[x.smArray[i].col] += smArray[current].value * x.smArray[i].value;
+            // 依次取出A矩阵中RowA行的元素(a,b)，并与对应的B矩阵中每一列的每个元素相乘，并按照ColsB将累加和存储到Temp中
+            for (int i = 0; i < x.Cols; ++i) {
+                temp[i] += smArray[current].value * x.smArray[indexB].value;
+                indexB++;
             }
             current++; //取A矩阵中RowA行的下一个元素
-            for (int j = 0; j < x.Cols; ++j) {
-                if (temp[j] != 0) { //压缩存储
-                    result.smArray[lastInResult].row = RowA;
-                    result.smArray[lastInResult].col = j;
-                    result.smArray[lastInResult].value = temp[j];
-                    lastInResult++;
-                }
+        }
+        for (int j = 0; j < x.Cols; ++j) {
+            if (temp[j] != 0) {
+                result.smArray[lastInResult].row = RowA;
+                result.smArray[lastInResult].col = j;
+                result.smArray[lastInResult].value = temp[j];
+                lastInResult++;
             }
         }
-        delete[]temp;
     }
     result.Rows = Rows;
     result.Cols = x.Cols;
     result.Terms = lastInResult;
-    delete[]rowSize, delete[]rowStart;
+    delete[] temp, delete[]colsStartCpy;
     return result;
 }
 
