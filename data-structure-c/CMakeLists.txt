@@ -136,4 +136,14 @@ add_executable(matrix_particular_matrix_multi_diagonal
         02-nonlinear-list/01-matrix/02-particular-matrix/01-symmetric-matrix/04-multi-diagonal-matrix/multidiagonalmatrix.c
         02-nonlinear-list/01-matrix/02-particular-matrix/01-symmetric-matrix/04-multi-diagonal-matrix/multidiagonalmatrix.h
         )
+add_executable(string_bf_match
+        02-nonlinear-list/03-string/01-string-match-algorithm/01-bf/bfmatch.h
+        02-nonlinear-list/03-string/01-string-match-algorithm/01-bf/bfmatch.c
+        02-nonlinear-list/03-string/01-string-match-algorithm/01-bf/main.c
+        )
+add_executable(string_rk_match
+        02-nonlinear-list/03-string/01-string-match-algorithm/02-rk/rkmatch.h
+        02-nonlinear-list/03-string/01-string-match-algorithm/02-rk/rkmatch.c
+        02-nonlinear-list/03-string/01-string-match-algorithm/02-rk/main.c
+        )
 
