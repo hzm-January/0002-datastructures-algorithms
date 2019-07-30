@@ -146,4 +146,9 @@ add_executable(string_rk_match
         02-nonlinear-list/03-string/01-string-match-algorithm/02-rk/rkmatch.c
         02-nonlinear-list/03-string/01-string-match-algorithm/02-rk/main.c
         )
+add_executable(string_bm_match
+        02-nonlinear-list/03-string/01-string-match-algorithm/03-bm/bmmatch.h
+        02-nonlinear-list/03-string/01-string-match-algorithm/03-bm/bmmatch.c
+        02-nonlinear-list/03-string/01-string-match-algorithm/03-bm/main.c
+        )
 
