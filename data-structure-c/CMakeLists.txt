@@ -151,4 +151,8 @@ add_executable(string_bm_match
         02-nonlinear-list/03-string/01-string-match-algorithm/03-bm/bmmatch.c
         02-nonlinear-list/03-string/01-string-match-algorithm/03-bm/main.c
         )
-
+add_executable(string_kmp_match
+        02-nonlinear-list/03-string/01-string-match-algorithm/04-kmp/kmpstring.c
+        02-nonlinear-list/03-string/01-string-match-algorithm/04-kmp/kmpstring.h
+        02-nonlinear-list/03-string/01-string-match-algorithm/04-kmp/main.c
+        )

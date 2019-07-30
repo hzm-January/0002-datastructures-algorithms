@@ -5,12 +5,13 @@
 #include "rkmatch.h"
 
 void initialize(char *target, char *pattern) {
+    destroy();
     systempowerdictionary(strlen(pattern));
     substringhashcodedictionary(target, strlen(pattern));
     patternhashcode(pattern);
 }
 
-void distroy() {
+void destroy() {
     if (power_dictionary != NULL) {
         free(power_dictionary);
         power_dictionary = NULL;

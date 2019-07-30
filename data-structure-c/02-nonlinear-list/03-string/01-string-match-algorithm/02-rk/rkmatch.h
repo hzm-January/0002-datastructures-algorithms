@@ -49,6 +49,7 @@ void systempowerdictionary(int len);
  * 初始化
  */
 void initialize();
+void destroy(); //释放资源
 int patternhashcode(char *pattern);
 
 #endif //DATA_STRUCTURE_C_RKMATCH_H
