@@ -11,11 +11,18 @@
 #include <stdio.h>
 
 // 失效函数
-int * next;
+int *next;
+
 // initialize
-void initialize(char * pattern);
+void initialize(char *pattern);
+
 // destroy
 void destroy();
+
 // find
 int find(char *target, char *pattern);
+
+// 失效函数(next函数)
+void generateNext(char *pattern);
+
 #endif //DATA_STRUCTURE_C_KMPSTRING_H
