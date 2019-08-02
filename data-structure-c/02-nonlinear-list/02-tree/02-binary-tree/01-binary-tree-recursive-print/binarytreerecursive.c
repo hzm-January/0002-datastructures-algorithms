@@ -2,7 +2,7 @@
 // Created by asus on 2019/7/16.
 //
 
-#include "fundamentaltree.h"
+#include "binarytreerecursive.h"
 
 
 void prePrint(TreeNode *node) {

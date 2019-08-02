@@ -96,11 +96,11 @@ add_executable(queue_priority_queue
         01-linear-list/04-queue/01-queue/04-priority-queue/main.c
         01-linear-list/04-queue/queue.h
         )
-add_executable(tree_fundamental_tree_list
-        02-nonlinear-list/02-tree/01-fundamental-tree/01-fundamental-tree-list/fundamentaltree.c
-        02-nonlinear-list/02-tree/01-fundamental-tree/01-fundamental-tree-list/fundamentaltree.h
-        02-nonlinear-list/02-tree/01-fundamental-tree/01-fundamental-tree-list/main.c
-        )
+#add_executable(tree_fundamental_tree_list
+#        02-nonlinear-list/02-tree/01-fundamental-tree/01-fundamental-tree-list/fundamentaltree.c
+#        02-nonlinear-list/02-tree/01-fundamental-tree/01-fundamental-tree-list/fundamentaltree.h
+#        02-nonlinear-list/02-tree/01-fundamental-tree/01-fundamental-tree-list/main.c
+#        )
 add_executable(tree_fundamental_tree_array
         02-nonlinear-list/02-tree/01-fundamental-tree/02-fundamental-tree-array/fundamentaltree.c
         02-nonlinear-list/02-tree/01-fundamental-tree/02-fundamental-tree-array/fundamentaltree.h
@@ -156,3 +156,14 @@ add_executable(string_kmp_match
         02-nonlinear-list/03-string/01-string-match-algorithm/04-kmp/kmpstring.h
         02-nonlinear-list/03-string/01-string-match-algorithm/04-kmp/main.c
         )
+add_executable(tree_binary_recursive_print
+        02-nonlinear-list/02-tree/02-binary-tree/01-binary-tree-recursive-print/binarytreerecursive.h
+        02-nonlinear-list/02-tree/02-binary-tree/01-binary-tree-recursive-print/binarytreerecursive.c
+        02-nonlinear-list/02-tree/02-binary-tree/01-binary-tree-recursive-print/main.c
+        )
+add_executable(tree_binary_non-recursive_print
+        02-nonlinear-list/02-tree/02-binary-tree/02-binary-tree-non-recursive-print/binarytreenonrecursive.h
+        02-nonlinear-list/02-tree/02-binary-tree/02-binary-tree-non-recursive-print/binarytreenonrecursive.c
+        02-nonlinear-list/02-tree/02-binary-tree/02-binary-tree-non-recursive-print/main.c
+        )
+

@@ -1,12 +1,12 @@
 //
-// Created by asus on 2019/7/16.
+// Created by asus on 2019/8/2.
 //
-#include "fundamentaltree.h"
-#include <stdlib.h>
+#include "binarytreenonrecursive.h"
+int main(int argc, char* argv[]){
 
+    initializeStack();
 
-int main(int argc, char *argv[]) {
-    //initialize tree root;
+//initialize tree root;
     root = (TreeNode *) malloc(sizeof(TreeNode));
     root->value = 0;
     TreeNode *rootLeft = (TreeNode *) malloc(sizeof(TreeNode));
@@ -35,14 +35,12 @@ int main(int argc, char *argv[]) {
     rootRight->right = rootRightR;
     root->left = rootLeft;
     root->right = rootRight;
+//    prePrintNr(root);
+    inPrintNr(root);
 
-    // previous print
-    prePrint(root);
-    printf("\n");
-    inPrint(root);
-    printf("\n");
-    postPrint(root);
-    printf("\n");
+
+
+    destroyStack();
+
     return 0;
-};
-
+}
