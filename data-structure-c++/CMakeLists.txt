@@ -13,3 +13,9 @@ add_executable(nonlinear_string_sequence
         02-nonlinear-list/02-string/01-seq-string/seqstring.h
         02-nonlinear-list/02-string/01-seq-string/main.cpp
         )
+add_executable(nonlinear_generated_list
+        02-nonlinear-list/03-generated-list/generatedlist.h
+        02-nonlinear-list/03-generated-list/generatedlist.cpp
+        02-nonlinear-list/03-generated-list/main.cpp
+        )
+
