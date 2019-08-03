@@ -157,17 +157,17 @@ add_executable(string_kmp_match
         02-nonlinear-list/03-string/01-string-match-algorithm/04-kmp/main.c
         )
 add_executable(tree_binary_recursive_print
-        02-nonlinear-list/02-tree/02-binary-tree/01-binary-tree-recursive-print/binarytreerecursive.h
-        02-nonlinear-list/02-tree/02-binary-tree/01-binary-tree-recursive-print/binarytreerecursive.c
-        02-nonlinear-list/02-tree/02-binary-tree/01-binary-tree-recursive-print/main.c
+        02-nonlinear-list/02-tree/02-binary-tree/01-binary-tree-traverse/01-binary-tree-recursive-print/binarytreerecursive.h
+        02-nonlinear-list/02-tree/02-binary-tree/01-binary-tree-traverse/01-binary-tree-recursive-print/binarytreerecursive.c
+        02-nonlinear-list/02-tree/02-binary-tree/01-binary-tree-traverse/01-binary-tree-recursive-print/main.c
         )
 add_executable(tree_binary_non-recursive_pre_and_in_print
-        02-nonlinear-list/02-tree/02-binary-tree/02-binary-tree-non-recursive-print/01-pre-and-in/binarytreenonrecursive.h
-        02-nonlinear-list/02-tree/02-binary-tree/02-binary-tree-non-recursive-print/01-pre-and-in/binarytreenonrecursive.c
-        02-nonlinear-list/02-tree/02-binary-tree/02-binary-tree-non-recursive-print/01-pre-and-in/main.c
+        02-nonlinear-list/02-tree/02-binary-tree/01-binary-tree-traverse/02-binary-tree-non-recursive-print/01-pre-and-in/binarytreenonrecursive.h
+        02-nonlinear-list/02-tree/02-binary-tree/01-binary-tree-traverse/02-binary-tree-non-recursive-print/01-pre-and-in/binarytreenonrecursive.c
+        02-nonlinear-list/02-tree/02-binary-tree/01-binary-tree-traverse/02-binary-tree-non-recursive-print/01-pre-and-in/main.c
         )
 add_executable(tree_binary_non-recursive_post_print
-        02-nonlinear-list/02-tree/02-binary-tree/02-binary-tree-non-recursive-print/02-post/binarytreenonrescursivepost.h
-        02-nonlinear-list/02-tree/02-binary-tree/02-binary-tree-non-recursive-print/02-post/binarytreenonrescursivepost.c
-        02-nonlinear-list/02-tree/02-binary-tree/02-binary-tree-non-recursive-print/02-post/main.c
+        02-nonlinear-list/02-tree/02-binary-tree/01-binary-tree-traverse/02-binary-tree-non-recursive-print/02-post/binarytreenonrescursivepost.h
+        02-nonlinear-list/02-tree/02-binary-tree/01-binary-tree-traverse/02-binary-tree-non-recursive-print/02-post/binarytreenonrescursivepost.c
+        02-nonlinear-list/02-tree/02-binary-tree/01-binary-tree-traverse/02-binary-tree-non-recursive-print/02-post/main.c
         )
