@@ -37,19 +37,6 @@ bool push(TreeNode *node) {
     return true;
 }
 
-bool pushForPostPrint(TreeNode *node, int tag) {
-    StackTreeNode *p = stackHead;
-    StackTreeNode *newNode = (StackTreeNode *) malloc(sizeof(StackTreeNode));
-    newNode->value = node;
-    newNode->next = NULL;
-    newNode->tag = tag;
-    while (p->next != NULL) {
-        p = p->next;
-    }
-    p->next = newNode;
-    return true;
-}
-
 TreeNode *pop() {
     StackTreeNode *p = stackHead;
     if (p->next == NULL) {
@@ -107,21 +94,6 @@ void inPrintNr(TreeNode *node) {
             p = p->right;
         }
     } while (p != NULL || !stackIsEmpty());
-}
-
-//
-////后序遍历
-void postPrint(TreeNode *node) {
-    TreeNode *p = node;
-    while (p->left != NULL) {
-        pushForPostPrint(p, 0);
-        p = p->left;
-    }
-    int flag = 1;
-    while (flag && !stackIsEmpty()) {
-        p = pop();
-
-    }
 }
 
 bool stackIsEmpty() {

@@ -21,7 +21,6 @@ typedef struct TREE_NODE {
 typedef struct TREE_NODE_STACK {
     struct TREE_NODE *value;
     struct TREE_NODE_STACK *next;
-    int tag; //0 左，1 右
 } StackTreeNode;
 // tree root
 TreeNode *root;
@@ -35,12 +34,10 @@ void initializeStack();
 
 bool push(TreeNode *node);
 
-bool pushForPostPrint(TreeNode *node, int tag);
-
 bool stackIsEmpty();
 
 TreeNode *pop();
-StackTreeNode popForPostPrint();
+
 /**
  * 二叉树非递归遍历
  * @param node
