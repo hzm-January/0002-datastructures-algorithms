@@ -107,9 +107,9 @@ add_executable(tree_fundamental_tree_array
         02-nonlinear-list/02-tree/01-fundamental-tree/02-fundamental-tree-array/main.c
         )
 add_executable(tree_binary_search_tree
-        02-nonlinear-list/02-tree/02-binary-tree/02-binary-search-tree/binarysearchtree.c
-        02-nonlinear-list/02-tree/02-binary-tree/02-binary-search-tree/binarysearchtree.h
-        02-nonlinear-list/02-tree/02-binary-tree/02-binary-search-tree/main.c
+        02-nonlinear-list/02-tree/02-binary-tree/03-binary-search-tree/binarysearchtree.c
+        02-nonlinear-list/02-tree/02-binary-tree/03-binary-search-tree/binarysearchtree.h
+        02-nonlinear-list/02-tree/02-binary-tree/03-binary-search-tree/main.c
         )
 add_executable(matrix_ordinary_matrix
         02-nonlinear-list/01-matrix/01-ordinary-matrix/main.c
@@ -161,9 +161,13 @@ add_executable(tree_binary_recursive_print
         02-nonlinear-list/02-tree/02-binary-tree/01-binary-tree-recursive-print/binarytreerecursive.c
         02-nonlinear-list/02-tree/02-binary-tree/01-binary-tree-recursive-print/main.c
         )
-add_executable(tree_binary_non-recursive_print
-        02-nonlinear-list/02-tree/02-binary-tree/02-binary-tree-non-recursive-print/binarytreenonrecursive.h
-        02-nonlinear-list/02-tree/02-binary-tree/02-binary-tree-non-recursive-print/binarytreenonrecursive.c
-        02-nonlinear-list/02-tree/02-binary-tree/02-binary-tree-non-recursive-print/main.c
+add_executable(tree_binary_non-recursive_pre_and_in_print
+        02-nonlinear-list/02-tree/02-binary-tree/02-binary-tree-non-recursive-print/01-pre-and-in/binarytreenonrecursive.h
+        02-nonlinear-list/02-tree/02-binary-tree/02-binary-tree-non-recursive-print/01-pre-and-in/binarytreenonrecursive.c
+        02-nonlinear-list/02-tree/02-binary-tree/02-binary-tree-non-recursive-print/01-pre-and-in/main.c
         )
-
+add_executable(tree_binary_non-recursive_post_print
+        02-nonlinear-list/02-tree/02-binary-tree/02-binary-tree-non-recursive-print/02-post/binarytreenonrescursivepost.h
+        02-nonlinear-list/02-tree/02-binary-tree/02-binary-tree-non-recursive-print/02-post/binarytreenonrescursivepost.c
+        02-nonlinear-list/02-tree/02-binary-tree/02-binary-tree-non-recursive-print/02-post/main.c
+        )
