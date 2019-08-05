@@ -27,4 +27,7 @@ void createInThreadInOrder(TreeNode *cur, TreeNode **pre);
 // 中序线索化后，使用线索进行前序遍历
 void preOrderWithThread(TreeNode *node);
 
+// 中序线索化后，使用线索进行中序遍历
+void inOrderWithThread(TreeNode *node);
+
 #endif //DATA_STRUCTURE_C_THREADEDBINARYTREEINORDER_H

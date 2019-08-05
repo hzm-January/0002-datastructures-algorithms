@@ -54,5 +54,7 @@ int main(int argc, char *argv[]) {
 
     createInThread();
     preOrderWithThread(root);
+    printf("\n");
+    inOrderWithThread(root);
     return 0;
 }

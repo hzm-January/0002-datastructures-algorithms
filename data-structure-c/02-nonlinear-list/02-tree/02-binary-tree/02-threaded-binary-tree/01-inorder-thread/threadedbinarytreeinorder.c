@@ -34,10 +34,10 @@ void createInThreadInOrder(TreeNode *cur, TreeNode **pre) {
 }
 
 void preOrderWithThread(TreeNode *node) {
-    if (root == NULL) {
+    if (node == NULL) {
         return;
     }
-    TreeNode *p = root;
+    TreeNode *p = node;
     while (p != NULL) {
         printf("%d\t", p->value);
         if (p->ltag == 0) {
@@ -54,4 +54,48 @@ void preOrderWithThread(TreeNode *node) {
         }
 
     }
+}
+
+void inOrderWithThread(TreeNode *node) {
+    if (node == NULL) {
+        return;
+    }
+    TreeNode *p = node;
+    while (p != NULL) {
+        while (p->ltag == 0) {
+            p = p->left;
+        }
+        printf("%d\t", p->value);
+        while (p->right != NULL && p->rtag == 1) {
+            p = p->right;
+            printf("%d\t", p->value);
+        }
+        p = p->right;
+    }
+
+}
+/**
+ * 先是从根结点开始按照左子树深入，直到遇见第一个左孩子是线索的结点，紧接着就打印它，
+ * 这次打印的其实是链表头。接下来看它的右孩子是不是后继，如果是就继续打印；直到右孩子不是线索，
+ * 此时转到右子树，开始和根结点一样的循环...最后一个while中需要判断node.rchild不为空，
+ * 如果为空，我们打印出来就是null，这不是我们想要看得结果。
+ * @param node
+ */
+void postOrderWithThread(TreeNode *node) {
+    if (node == NULL) {
+        return;
+    }
+    TreeNode *p = node;
+    while (p != NULL) {
+        while (p->ltag == 0) {
+            p = p->left;
+        }
+        printf("%d\t", p->value);
+        while (p != NULL && p->rtag == 1) {
+            p = p->right;
+        }
+        p = p->right;
+
+    }
+
 }
