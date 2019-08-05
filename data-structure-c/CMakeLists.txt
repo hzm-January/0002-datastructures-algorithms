@@ -171,8 +171,13 @@ add_executable(tree_binary_non-recursive_post_print
         02-nonlinear-list/02-tree/02-binary-tree/01-binary-tree-traverse/02-binary-tree-non-recursive-print/02-post/binarytreenonrescursivepost.c
         02-nonlinear-list/02-tree/02-binary-tree/01-binary-tree-traverse/02-binary-tree-non-recursive-print/02-post/main.c
         )
-add_executable(tree_binary_threaded
+add_executable(tree_binary_threaded_inorder
         02-nonlinear-list/02-tree/02-binary-tree/02-threaded-binary-tree/01-inorder-thread/threadedbinarytreeinorder.c
         02-nonlinear-list/02-tree/02-binary-tree/02-threaded-binary-tree/01-inorder-thread/threadedbinarytreeinorder.h
         02-nonlinear-list/02-tree/02-binary-tree/02-threaded-binary-tree/01-inorder-thread/main.c
+        )
+add_executable(tree_binary_threaded_preorder
+        02-nonlinear-list/02-tree/02-binary-tree/02-threaded-binary-tree/02-preorder-thread/threadbinarytreepreorder.c
+        02-nonlinear-list/02-tree/02-binary-tree/02-threaded-binary-tree/02-preorder-thread/threadbinarytreepreorder.h
+        02-nonlinear-list/02-tree/02-binary-tree/02-threaded-binary-tree/02-preorder-thread/main.c
         )
