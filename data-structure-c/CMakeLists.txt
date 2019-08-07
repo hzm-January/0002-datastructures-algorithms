@@ -97,9 +97,9 @@ add_executable(queue_priority_queue
         01-linear-list/04-queue/queue.h
         )
 #add_executable(tree_fundamental_tree_list
-#        02-nonlinear-list/02-tree/01-fundamental-tree/01-fundamental-tree-list/fundamentaltree.c
-#        02-nonlinear-list/02-tree/01-fundamental-tree/01-fundamental-tree-list/fundamentaltree.h
-#        02-nonlinear-list/02-tree/01-fundamental-tree/01-fundamental-tree-list/main.c
+#        02-nonlinear-list/02-tree/01-fundamental-tree/01-fundamental-tree-storage/fundamentaltree.c
+#        02-nonlinear-list/02-tree/01-fundamental-tree/01-fundamental-tree-storage/fundamentaltree.h
+#        02-nonlinear-list/02-tree/01-fundamental-tree/01-fundamental-tree-storage/main.c
 #        )
 add_executable(tree_binary_tree_save
         02-nonlinear-list/02-tree/02-binary-tree/01-binary-tree-save/fundamentaltree.c
@@ -180,4 +180,14 @@ add_executable(tree_binary_threaded_preorder
         02-nonlinear-list/02-tree/02-binary-tree/03-threaded-binary-tree/02-preorder-thread/threadbinarytreepreorder.c
         02-nonlinear-list/02-tree/02-binary-tree/03-threaded-binary-tree/02-preorder-thread/threadbinarytreepreorder.h
         02-nonlinear-list/02-tree/02-binary-tree/03-threaded-binary-tree/02-preorder-thread/main.c
+        )
+add_executable(tree_fundamental_tree_parent_pointer
+        02-nonlinear-list/02-tree/01-fundamental-tree/01-fundamental-tree-storage/01-parent-pointer/parentpointer.c
+        02-nonlinear-list/02-tree/01-fundamental-tree/01-fundamental-tree-storage/01-parent-pointer/parentpointer.h
+        02-nonlinear-list/02-tree/01-fundamental-tree/01-fundamental-tree-storage/01-parent-pointer/main.c
+        )
+add_executable(tree_fundamental_tree_child_link
+        02-nonlinear-list/02-tree/01-fundamental-tree/01-fundamental-tree-storage/02-child-link/childlink.h
+        02-nonlinear-list/02-tree/01-fundamental-tree/01-fundamental-tree-storage/02-child-link/childlink.c
+        02-nonlinear-list/02-tree/01-fundamental-tree/01-fundamental-tree-storage/02-child-link/main.c
         )
