@@ -13,16 +13,16 @@ int main(int argc, char *argv[]) {
 //    printf("\n");
 //    printf("%p\t", tree[0]);
 //    printf("%d\t", tree[0]==NULL);
-    save(0, -1);
-    save(1, 0);
-    save(2, 0);
-    save(3, 0);
-    save(11, 1);
-    save(12, 1);
-    save(13, 1);
-    save(21, 2);
-    save(22, 2);
-    save(23, 2);
+    createTreeByNodes(0, -1);
+    createTreeByNodes(1, 0);
+    createTreeByNodes(2, 0);
+    createTreeByNodes(3, 0);
+    createTreeByNodes(11, 1);
+    createTreeByNodes(12, 1);
+    createTreeByNodes(13, 1);
+    createTreeByNodes(21, 2);
+    createTreeByNodes(22, 2);
+    createTreeByNodes(23, 2);
     print();
     return 0;
 }

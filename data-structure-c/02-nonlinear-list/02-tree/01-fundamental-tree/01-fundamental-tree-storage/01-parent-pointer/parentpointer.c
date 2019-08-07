@@ -6,7 +6,7 @@
 
 
 // 保存节点
-void save(int value, int pvalue) {
+void createTreeByNodes(int value, int pvalue) {
     if (size == MAX_SIZE) {
         printf("size greater max size");
         exit(1);
@@ -22,7 +22,7 @@ void save(int value, int pvalue) {
     //查找父节点索引
     int h = -1;
     for (int i = 0; i < size; ++i) {
-        if (tree[i]->value == pvalue) {
+        if (tree[i]->value == parentValue) {
             h = i;
             break;
         }

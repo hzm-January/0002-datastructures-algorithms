@@ -191,3 +191,8 @@ add_executable(tree_fundamental_tree_child_link
         02-nonlinear-list/02-tree/01-fundamental-tree/01-fundamental-tree-storage/02-child-link/childlink.c
         02-nonlinear-list/02-tree/01-fundamental-tree/01-fundamental-tree-storage/02-child-link/main.c
         )
+add_executable(tree_fundamental_tree_child_brother_link
+        02-nonlinear-list/02-tree/01-fundamental-tree/01-fundamental-tree-storage/03-child-brother-list/childbrotherlist.h
+        02-nonlinear-list/02-tree/01-fundamental-tree/01-fundamental-tree-storage/03-child-brother-list/childbrotherlist.c
+        02-nonlinear-list/02-tree/01-fundamental-tree/01-fundamental-tree-storage/03-child-brother-list/main.c
+        )

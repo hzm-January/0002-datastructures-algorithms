@@ -21,7 +21,7 @@ void destroy() {
     }
 }
 
-void save(int value, int parentValue) {
+void createTreeByNodes(int value, int parentValue) {
     TreeNode *newNode = (TreeNode *) malloc(sizeof(TreeNode));
     newNode->datum = value;
     newNode->link = NULL;

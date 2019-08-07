@@ -16,6 +16,6 @@ typedef struct TREE_NODE {
 TreeNode *tree[MAX_SIZE];
 int size;
 
-void save(int value, int pvalue); // 保存节点
+void createTreeByNodes(int value, int pvalue); // 保存节点
 void print(); // 打印所有节点
 #endif //DATA_STRUCTURE_C_PARENTPOINTER_H

@@ -27,7 +27,7 @@ void destroy();
  * @param value 插入元素值
  * @param parentValue 插入元素的父元素值
  */
-void save(int value, int parentValue); // 添加节点
+void createTreeByNodes(int value, int parentValue); // 添加节点
 /**
  *
  */
