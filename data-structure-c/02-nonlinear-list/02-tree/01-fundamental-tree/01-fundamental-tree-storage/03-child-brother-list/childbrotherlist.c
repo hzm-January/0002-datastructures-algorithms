@@ -149,3 +149,4 @@ int postRootDepth(TreeNode *proot) {
 int depthByPostRoot() {
     return postRootDepth(root);
 }
+

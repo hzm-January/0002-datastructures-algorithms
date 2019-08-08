@@ -34,5 +34,8 @@ void queuePrint(TreeNode *proot);
  */
 int count();
 int countByPreRoot();
+/**
+ * 树的深度优先遍历----后根遍历----应用----求树的深度
+ */
 int depthByPostRoot();
 #endif //DATA_STRUCTURE_C_CHILDBROTHERLIST_H
