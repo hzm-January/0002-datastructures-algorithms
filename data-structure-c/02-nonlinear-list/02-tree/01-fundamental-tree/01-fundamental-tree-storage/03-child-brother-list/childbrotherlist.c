@@ -141,9 +141,9 @@ int postRootDepth(TreeNode *proot) {
     if (proot == NULL) {
         return 0;
     }
-    int child_node_count = postRootDepth(proot->child) + 1;
-    int link_child_node_count = postRootDepth(proot->link);
-    return (child_node_count > link_child_node_count) ? child_node_count : link_child_node_count;
+    int child_tree_depth = postRootDepth(proot->child) + 1;
+    int link_child_tree_depth = postRootDepth(proot->link);
+    return (child_tree_depth > link_child_tree_depth) ? child_tree_depth : link_child_tree_depth;
 }
 
 int depthByPostRoot() {
