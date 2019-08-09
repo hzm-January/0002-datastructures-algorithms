@@ -48,7 +48,7 @@ void delete(int data) {
     }
     //1. the node for deleting has a left node and a right node
     if (p->left != NULL && p->right != NULL) {
-        // find right tree of the node will be deleted
+        // find the min value node of right child tree
         TreeNode *minNode = p->right;
         TreeNode *minNodeP = p;
         while (minNode->left != NULL) {
@@ -127,7 +127,7 @@ int findMax() {
     return p->value;
 }
 
-int findMin(){
+int findMin() {
     TreeNode *p = root;
     while (p != NULL && p->left != NULL) {
         p = p->left;
@@ -139,9 +139,9 @@ int findMin(){
     return p->value;
 }
 
-int findParent(int data){
-    TreeNode * p = root;
-    TreeNode * pp = NULL;
+int findParent(int data) {
+    TreeNode *p = root;
+    TreeNode *pp = NULL;
     while (p != NULL && p->value != data) {
         pp = p;
         if (data > p->value) {
@@ -160,4 +160,50 @@ int findParent(int data){
         return -1;
     }
     return pp->value;
+}
+
+/**
+ * 查找
+ * @param value
+ * @return
+ */
+TreeNode *find(int value) {
+    TreeNode *p = root;
+    while (p != NULL && p->value != value) {
+        if (p->value > value) p = p->left;
+        else p = p->right;
+    }
+    return p;
+}
+
+/**
+ * 深度优先计算树的高度
+ * @param node
+ * @return
+ */
+int high_depth_first(TreeNode *node) {
+    if (node == NULL) {
+        return 0;
+    }
+    int depleft = high_depth_first(node->left);
+    int depright = high_depth_first(node->right);
+    return depleft > depright ? depleft + 1 : depright + 1;
+}
+
+int high_breadth_first(TreeNode *node) {
+    if (root == NULL) {
+        return 0;
+    }
+    enqueue(node);
+    int height = 0;
+    while (!isEmpty()) {
+        height++;
+        int queueSize = size();
+        for (int i = 0; i < queueSize; ++i) {
+            TreeNode *pNode = dequeue();
+            if (pNode->left != NULL) enqueue(pNode->left);
+            if (pNode->right != NULL) enqueue(pNode->right);
+        }
+    }
+    return height;
 }
