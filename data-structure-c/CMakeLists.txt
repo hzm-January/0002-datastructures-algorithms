@@ -208,3 +208,9 @@ add_executable(tree_forest
         02-nonlinear-list/02-tree/03-forest/01-forest-to-binary-tree/foresttotree.c
         02-nonlinear-list/02-tree/03-forest/01-forest-to-binary-tree/main.c
         )
+add_executable(tree_binary_confirm
+        02-nonlinear-list/02-tree/02-binary-tree/04-binary-tree-confirm/binarytreeconfirm.h
+        02-nonlinear-list/02-tree/02-binary-tree/04-binary-tree-confirm/binarytreeconfirm.c
+        02-nonlinear-list/02-tree/02-binary-tree/04-binary-tree-confirm/main.c
+        )
+
