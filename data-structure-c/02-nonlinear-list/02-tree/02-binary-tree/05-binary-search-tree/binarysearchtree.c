@@ -207,3 +207,16 @@ int high_breadth_first(TreeNode *node) {
     }
     return height;
 }
+
+void print_breadth_first(TreeNode *node) {
+    if (root == NULL) {
+        return;
+    }
+    enqueue(node);
+    while (!isEmpty()) {
+        TreeNode *pNode = dequeue();
+        printf("%d\t", pNode->value);
+        if (pNode->left != NULL) enqueue(pNode->left);
+        if (pNode->right != NULL) enqueue(pNode->right);
+    }
+}

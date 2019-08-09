@@ -35,6 +35,7 @@ int high_depth_first(TreeNode *node);
 
 int high_breadth_first(TreeNode *node);
 
+void print_breadth_first(TreeNode *node);
 
 
 #endif //DATA_STRUCTURE_C_BINARYSEARCHTREE_H

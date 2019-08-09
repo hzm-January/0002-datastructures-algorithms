@@ -30,4 +30,5 @@ int main(int argv, char *argc[]) {
 //    printf("%d\n", pNode->value);
     printf("the height of the tree is : %d\n", high_depth_first(root));
     printf("the height of the tree is : %d\n", high_breadth_first(root));
+    print_breadth_first(root);
 }
