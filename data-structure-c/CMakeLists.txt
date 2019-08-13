@@ -222,3 +222,10 @@ add_executable(tree_binary_search_self_balance_avl
         02-nonlinear-list/02-tree/02-binary-tree/06-self-balancing-binary-search-tree/01-avl/stacktreenode.h
         02-nonlinear-list/02-tree/02-binary-tree/06-self-balancing-binary-search-tree/01-avl/stacktreenode.c
         )
+
+add_executable(graph_storage_represention_adjacency_matrix
+        02-nonlinear-list/05-graph/01-graph-storage-representation/01-adjacency-matrix/01-undirected-graph/adjacencymatrix.h
+        02-nonlinear-list/05-graph/01-graph-storage-representation/01-adjacency-matrix/01-undirected-graph/adjacencymatrix.c
+        02-nonlinear-list/05-graph/01-graph-storage-representation/01-adjacency-matrix/01-undirected-graph/main.c
+        02-nonlinear-list/05-graph/01-graph-storage-representation/graph.h
+        )
