@@ -15,6 +15,6 @@ void insertEdge(int v1, int v2, int weight); // insert a edge to the graph
 void removeVertex(int v); // delete a vertex in the graph and delete all the edges associated with it
 bool isEmpty(); // check whether or not the graph is empty
 int weight(int v1, int v2); // return the weight of the edge which is created by connecting vertex v1 to vertex v2
-int fistNeighbor(int v);
-int nextNeighbor(int v);
+int firstNeighbor(int v); //return the first neighbor vertex
+int nextNeighbor(int v, int w); // return the neighbor vertex which is next w that is a adjacent vertex with v
 #endif //DATA_STRUCTURE_C_GRAPH_H

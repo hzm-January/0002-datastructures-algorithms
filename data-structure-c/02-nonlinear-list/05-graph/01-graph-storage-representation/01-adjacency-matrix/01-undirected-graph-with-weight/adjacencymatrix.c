@@ -91,3 +91,48 @@ bool isEmpty() {
     if (num_vertices <= 0) return true;
     return false;
 }
+
+// return the weight of the edge which is created by connecting vertex v1 to vertex v2
+int weight(int v1, int v2) {
+    if (v1 < 0 || v1 > MAX_VERTICES || v2 < 0 || v2 > MAX_VERTICES) {
+        printf(" the vertex greater than MAX_VERTICES which is maximum of vertices ..");
+        exit(1);
+    }
+    // check whether both v1 and v2 exist in the graph or not
+    int j = -1;
+    int k = -1;
+    for (int i = 0; i < num_vertices; ++i) {
+        if (vertices[i] == v1) j = i;
+        if (vertices[i] == v2) k = i;
+        if (j != -1 && k != -1) break;
+    }
+    if (j == -1) {
+        printf(" v1 does not exist in the graph ");
+        exit(1);
+    }
+    if (k == -1) {
+        printf(" v2 does not exist in the graph ");
+        exit(1);
+    }
+    // return the weight
+    return edges[v1][v2];
+}
+
+int firstNeighbor(int v) {
+    for (int i = 0; i < MAX_VERTICES; ++i) {
+        if (edges[v][i] != DEFAULT_WEIGHT && edges[v][i] != 0) {
+            return i;
+        }
+    }
+    return -1;
+}
+
+//
+int nextNeighbor(int v, int w) {
+    for (int i = w + 1; i < MAX_VERTICES; ++i) {
+        if (edges[v][i] != DEFAULT_WEIGHT && edges[v][i] != 0) {
+            return i;
+        }
+    }
+    return -1;
+}
