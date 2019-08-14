@@ -1,4 +1,4 @@
 # data structures & algorithms
-this repository contains c , c++  data structures and algorithms code
+the codes in this repository for data structures and algorithms are programmed by c, c++ 
 
-these projects programmed in CLion which is a IDE by JetBrains
+these projects programmed in CLion which is an IDE by JetBrains
