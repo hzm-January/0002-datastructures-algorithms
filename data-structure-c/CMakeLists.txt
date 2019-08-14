@@ -229,3 +229,10 @@ add_executable(graph_storage_represention_adjacency_matrix
         02-nonlinear-list/05-graph/01-graph-storage-representation/01-adjacency-matrix/01-undirected-graph-with-weight-matrix/main.c
         02-nonlinear-list/05-graph/01-graph-storage-representation/graph.h
         )
+
+add_executable(graph_storage_represention_adjacency_list
+        02-nonlinear-list/05-graph/01-graph-storage-representation/02-adjacency-list/01-directed-graph-with-weight/adjacencylist.h
+        02-nonlinear-list/05-graph/01-graph-storage-representation/02-adjacency-list/01-directed-graph-with-weight/adjacencylist.c
+        02-nonlinear-list/05-graph/01-graph-storage-representation/02-adjacency-list/01-directed-graph-with-weight/main.c
+        02-nonlinear-list/05-graph/01-graph-storage-representation/graph.h
+        )
