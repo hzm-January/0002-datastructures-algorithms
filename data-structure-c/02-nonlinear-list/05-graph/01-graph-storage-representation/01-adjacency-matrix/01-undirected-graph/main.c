@@ -7,8 +7,9 @@ int main(int argc, char *argv[]) {
     graph();
     insertVertex(1);
     insertVertex(2);
-    insertVertex(56);
+//    insertVertex(56);
     insertEdge(1, 2, 10);
     insertEdge(5, 6, 10);
+    removeVertex(1);
     printf("The graph is empty? %d", isEmpty());
 }
