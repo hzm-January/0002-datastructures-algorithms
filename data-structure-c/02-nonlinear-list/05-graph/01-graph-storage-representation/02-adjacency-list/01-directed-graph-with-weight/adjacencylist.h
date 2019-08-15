@@ -15,7 +15,7 @@
 typedef struct GRAPH_EDGE{
     int weight;
     struct GRAPH_EDGE * link;
-    int adjacency;
+    int cost; // the adjacent vertex
 } EDGE;
 
 typedef struct GRAPH_VERTEX{

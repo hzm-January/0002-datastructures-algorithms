@@ -9,7 +9,10 @@ int main(int argc, char *argv[]) {
     insertVertex(1);
     insertVertex(2);
     insertVertex(3);
+//    insertVertex(3);
 //    insertVertex(20);
-
+    insertEdge(2, 3, 11);
+    insertEdge(2, 4, 11);
+    insertEdge(4, 2, 33);
     return 0;
 }
