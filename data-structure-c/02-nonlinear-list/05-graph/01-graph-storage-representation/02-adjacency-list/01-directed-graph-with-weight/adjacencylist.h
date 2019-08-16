@@ -23,5 +23,7 @@ typedef struct GRAPH_VERTEX{
     EDGE * adjacency;
 } VERTEX;
 VERTEX * vertices[10]; // the array of vertices
+VERTEX * inverse_vertices[10]; //the array of inverse vertices
 int num_vertices; // the size of vertices array
+int num_inverse_vertices; // the size of inverse vertices array
 #endif //DATA_STRUCTURE_C_ADJACENCYLIST_H

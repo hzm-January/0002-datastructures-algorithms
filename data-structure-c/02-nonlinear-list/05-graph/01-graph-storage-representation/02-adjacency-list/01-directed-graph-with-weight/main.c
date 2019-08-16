@@ -14,5 +14,7 @@ int main(int argc, char *argv[]) {
     insertEdge(2, 3, 11);
     insertEdge(2, 4, 11);
     insertEdge(4, 2, 33);
+    removeVertex(1);
+    removeVertex(4);
     return 0;
 }
