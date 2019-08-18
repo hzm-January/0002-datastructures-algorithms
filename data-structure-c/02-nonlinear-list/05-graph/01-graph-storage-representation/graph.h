@@ -8,6 +8,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <stdbool.h>
+#include <string.h>
 
 void graph(); // create an empty graph
 void insertVertex(int vertex); // insert a vertex to the graph
