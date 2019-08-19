@@ -11,15 +11,15 @@ int main(int argc, char *argv[]) {
     enQueue(1);
     enQueue(2);
     output();
+    output();
+    deQueue();
+    output();
+    deQueue();
+    output();
+    deQueue();
     printf("%d\n", getFront());
     printf("%d\n", getFront());
     output();
-//    deQueue();
-//    output();
-//    deQueue();
-//    output();
-//    deQueue();
-//    output();
-//    deQueue();
+    d
     return 0;
 };
