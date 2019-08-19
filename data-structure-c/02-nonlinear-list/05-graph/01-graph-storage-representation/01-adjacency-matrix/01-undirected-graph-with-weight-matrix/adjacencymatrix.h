@@ -10,7 +10,7 @@
 /**
  * 无向图--邻接矩阵存储
  */
-#include "../../graph.h"
+#include "../../../graph.h"
 #include <string.h>
 // 当前矩阵顶点个数
 int num_vertices;

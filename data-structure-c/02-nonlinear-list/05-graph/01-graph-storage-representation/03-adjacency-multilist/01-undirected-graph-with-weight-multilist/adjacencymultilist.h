@@ -7,7 +7,7 @@
 
 #define MAX_VERTICES_NUM 10
 
-#include "../../graph.h"
+#include "../../../graph.h"
 
 // edge
 typedef struct Edge {
