@@ -96,12 +96,12 @@ void insertEdgeToLnk(int v1, int v2, int weight, VERTEX **vs, int *size) {
 //    VERTEX *v1Head = vertices[i];
     // iterate v1 link to the end vertex;
     EDGE *p = vs[i]->adjacency;
-    while (p != NULL && p->link != NULL && p->cost != v2) {
+    while (p != NULL && p->link != NULL && p->dest != v2) {
         p = p->link;
     }
     if (p == NULL || p->link == NULL) {
         EDGE *edge = (EDGE *) malloc(sizeof(EDGE));
-        edge->cost = v2;
+        edge->dest = v2;
         edge->link = NULL;
         edge->weight = weight;
         if (p == NULL) {
@@ -111,7 +111,7 @@ void insertEdgeToLnk(int v1, int v2, int weight, VERTEX **vs, int *size) {
         }
     } else {
         // modify the weight of the edge
-        p->cost = weight;
+        p->dest = weight;
     }
 
 }
@@ -177,7 +177,7 @@ void deleteOtherAssociateEdges(int v, VERTEX **vs, int size) {
         EDGE *pp = NULL;
         while (p != NULL) {
             EDGE *delTemp = p;
-            if (delTemp->cost == v) {
+            if (delTemp->dest == v) {
                 if (delTemp == vs[i]->adjacency) {
                     vs[i]->adjacency = NULL;
                 } else {
@@ -186,7 +186,7 @@ void deleteOtherAssociateEdges(int v, VERTEX **vs, int size) {
             }
             pp = delTemp;
             p = delTemp->link;
-            if (delTemp->cost == v) {
+            if (delTemp->dest == v) {
                 free(delTemp);
                 delTemp = NULL;
             }
