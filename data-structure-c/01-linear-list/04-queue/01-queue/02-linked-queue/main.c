@@ -20,6 +20,5 @@ int main(int argc, char *argv[]) {
     printf("%d\n", getFront());
     printf("%d\n", getFront());
     output();
-    d
     return 0;
 };
