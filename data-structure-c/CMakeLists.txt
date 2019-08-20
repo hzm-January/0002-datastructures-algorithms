@@ -253,18 +253,34 @@ add_executable(graph_traverse_breadth_first
         02-nonlinear-list/05-graph/02-graph-traverse-and-shortest-path/01-breadth-first/linkedqueue/linkedqueue.c
         02-nonlinear-list/05-graph/01-graph-storage-representation/02-adjacency-list/02-undirected-graph-with-weight-list/udadjacentlist.c
         02-nonlinear-list/05-graph/01-graph-storage-representation/02-adjacency-list/02-undirected-graph-with-weight-list/udadjacentlist.h
-        02-nonlinear-list/05-graph/02-graph-traverse-and-shortest-path/01-breadth-first/breadthfirstsearch.c
+        02-nonlinear-list/05-graph/02-graph-traverse-and-shortest-path/01-breadth-first/breadthfirsttraverse.c
         02-nonlinear-list/05-graph/02-graph-traverse-and-shortest-path/01-breadth-first/breadthfirsttraverse.h
         02-nonlinear-list/05-graph/02-graph-traverse-and-shortest-path/01-breadth-first/main.c
         02-nonlinear-list/05-graph/graph.h
         )
-add_executable(graph_search_breadth_first
-        02-nonlinear-list/05-graph/03-graph-search/01-breadth-first/linkedqueue/linkedqueue.c
-        02-nonlinear-list/05-graph/03-graph-search/01-breadth-first/linkedqueue/linkedqueue.h
+add_executable(graph_traverse_deapth_first
+        02-nonlinear-list/05-graph/02-graph-traverse-and-shortest-path/02-depth-first/depthfirsttraverse.h
+        02-nonlinear-list/05-graph/02-graph-traverse-and-shortest-path/02-depth-first/depthfirsttraverse.c
         02-nonlinear-list/05-graph/01-graph-storage-representation/02-adjacency-list/02-undirected-graph-with-weight-list/udadjacentlist.c
         02-nonlinear-list/05-graph/01-graph-storage-representation/02-adjacency-list/02-undirected-graph-with-weight-list/udadjacentlist.h
-        02-nonlinear-list/05-graph/03-graph-search/01-breadth-first/breadthfirstsearch.c
-        02-nonlinear-list/05-graph/03-graph-search/01-breadth-first/breadthfirstsearch.h
-        02-nonlinear-list/05-graph/03-graph-search/01-breadth-first/main.c
+        02-nonlinear-list/05-graph/02-graph-traverse-and-shortest-path/02-depth-first/main.c
+        02-nonlinear-list/05-graph/graph.h
+        )
+add_executable(graph_search_breadth_first
+        02-nonlinear-list/05-graph/03-graph-search/01-breadth-first-search/linkedqueue/linkedqueue.c
+        02-nonlinear-list/05-graph/03-graph-search/01-breadth-first-search/linkedqueue/linkedqueue.h
+        02-nonlinear-list/05-graph/01-graph-storage-representation/02-adjacency-list/02-undirected-graph-with-weight-list/udadjacentlist.c
+        02-nonlinear-list/05-graph/01-graph-storage-representation/02-adjacency-list/02-undirected-graph-with-weight-list/udadjacentlist.h
+        02-nonlinear-list/05-graph/03-graph-search/01-breadth-first-search/breadthfirstsearch.h
+        02-nonlinear-list/05-graph/03-graph-search/01-breadth-first-search/breadthfirstsearch.c
+        02-nonlinear-list/05-graph/03-graph-search/01-breadth-first-search/main.c
+        02-nonlinear-list/05-graph/graph.h
+        )
+add_executable(graph_search_deapth_first
+        02-nonlinear-list/05-graph/01-graph-storage-representation/02-adjacency-list/02-undirected-graph-with-weight-list/udadjacentlist.c
+        02-nonlinear-list/05-graph/01-graph-storage-representation/02-adjacency-list/02-undirected-graph-with-weight-list/udadjacentlist.h
+        02-nonlinear-list/05-graph/03-graph-search/02-depth-first-search/depthfirstsearch.c
+        02-nonlinear-list/05-graph/03-graph-search/02-depth-first-search/depthfirstsearch.h
+        02-nonlinear-list/05-graph/03-graph-search/02-depth-first-search/main.c
         02-nonlinear-list/05-graph/graph.h
         )
