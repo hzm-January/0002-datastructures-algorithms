@@ -55,6 +55,14 @@ bool isEmptyQueue() {
         printf(" the queue is empty ...");
         exit(0);
     }
+    return false;
+}
+
+bool isEmptyQueueNoExit() {
+    if (queue->size == 0) {
+        return true;
+    }
+    return false;
 }
 
 bool isFullQueue() {
