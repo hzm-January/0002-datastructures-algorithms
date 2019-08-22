@@ -16,5 +16,3 @@ int find(int row, int column);
 //
 // Created by asus on 2019/7/22.
 //
-
-#ifndef DATA_STRUCTURE_C_UPPERTRIANGULARMATRIX_H
