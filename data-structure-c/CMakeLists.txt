@@ -289,3 +289,8 @@ add_executable(graph_minimum_spanning_tree_kruscal
         02-nonlinear-list/05-graph/04-minimum-spanning-tree/01-kruscal/kruscal.c
         02-nonlinear-list/05-graph/04-minimum-spanning-tree/01-kruscal/main.c
         )
+add_executable(set_union_find_set
+        02-nonlinear-list/06-set/01-UFSet/ufset.c
+        02-nonlinear-list/06-set/01-UFSet/ufset.h
+        02-nonlinear-list/06-set/01-UFSet/main.c
+        )
