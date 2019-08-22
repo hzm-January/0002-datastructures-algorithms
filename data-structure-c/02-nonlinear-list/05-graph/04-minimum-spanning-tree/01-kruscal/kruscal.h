@@ -1,0 +1,8 @@
+//
+// Created by asus on 2019/8/22.
+//
+
+#ifndef DATA_STRUCTURE_C_KRUSCAL_H
+#define DATA_STRUCTURE_C_KRUSCAL_H
+
+#endif //DATA_STRUCTURE_C_KRUSCAL_H

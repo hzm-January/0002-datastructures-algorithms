@@ -9,10 +9,9 @@ void visPrint(int index) {
     printf("%d\t", vertex.value);
 }
 
-// 连通顶点的变量
 void bft(int vIndex, int t) {
     if (found) return;
-    visPrint(vIndex);
+//    visPrint(vIndex);
     visit[vIndex] = true;
     if (vIndex == t) {
         found = true;

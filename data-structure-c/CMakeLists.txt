@@ -120,8 +120,8 @@ add_executable(matrix_ordinary_matrix
         )
 add_executable(matrix_particular_matrix_upper_triangular
         02-nonlinear-list/01-matrix/02-particular-matrix/01-symmetric-matrix/01-upper-triangular-matrix/main.c
-        02-nonlinear-list/01-matrix/02-particular-matrix/01-symmetric-matrix/01-upper-triangular-matrix/belowtriangularmatrix.c
         02-nonlinear-list/01-matrix/02-particular-matrix/01-symmetric-matrix/01-upper-triangular-matrix/uppertriangularmatrix.h
+        02-nonlinear-list/01-matrix/02-particular-matrix/01-symmetric-matrix/01-upper-triangular-matrix/uppertriangularmatrix.c
         )
 add_executable(matrix_particular_matrix_below_triangular
         02-nonlinear-list/01-matrix/02-particular-matrix/01-symmetric-matrix/02-below-triangular-matrix/main.c
@@ -283,4 +283,9 @@ add_executable(graph_search_deapth_first
         02-nonlinear-list/05-graph/03-graph-search/02-depth-first-search/depthfirstsearch.h
         02-nonlinear-list/05-graph/03-graph-search/02-depth-first-search/main.c
         02-nonlinear-list/05-graph/graph.h
+        )
+add_executable(graph_minimum_spanning_tree_kruscal
+        02-nonlinear-list/05-graph/04-minimum-spanning-tree/01-kruscal/kruscal.h
+        02-nonlinear-list/05-graph/04-minimum-spanning-tree/01-kruscal/kruscal.c
+        02-nonlinear-list/05-graph/04-minimum-spanning-tree/01-kruscal/main.c
         )
