@@ -1,3 +1,4 @@
+
 //
 // Created by asus on 2019/7/22.
 //
@@ -11,10 +12,10 @@ bool insert(int value) {
 
 int find(int row, int column) {
     int index = -1;
-    if (row >= column) {
-        index = (1 + row) * row / 2 + column;
+    if (row <= column) {
+        index = (2 * columnNum - row + 1) * row / 2 + column;
     } else {
-        index = (1 + column) * column / 2 + row;
+        index = (2 * columnNum - column + 1) * column / 2 + row;
     }
     return matrix[index];
 }
