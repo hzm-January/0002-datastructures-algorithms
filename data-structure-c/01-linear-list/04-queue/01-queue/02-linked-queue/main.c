@@ -4,9 +4,7 @@
 #include "linkedqueue.h"
 int main(int argc, char *argv[]) {
 
-    sentinel = (LinkNode*)malloc(sizeof(LinkNode));
-    sentinel->next = NULL;
-    sentinel->value = -1;
+    queue_init();
     enQueue(0);
     enQueue(1);
     enQueue(2);

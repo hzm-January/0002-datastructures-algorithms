@@ -2,51 +2,60 @@
 // Created by hzm on 2019/6/18.
 //
 #include "linkedqueue.h"
+void freeNode(LinkNode *delNode);
+void queue_init() {
+    queue = (Queue *) malloc(sizeof(Queue));
+    queue->size = 0;
+    LinkNode *newNode = (LinkNode *) malloc(sizeof(LinkNode));
+    newNode->value = -1;
+    newNode->next = NULL;
+    queue->sentinel = newNode;
+}
 
 void enQueue(int value) {
     isFull();
     LinkNode *newNode = (LinkNode *) malloc(sizeof(LinkNode));
     newNode->value = value;
     newNode->next = NULL;
-    LinkNode *p = sentinel;
+    LinkNode *p = queue->sentinel;
     while (p->next != NULL) {
         p = p->next;
     }
     p->next = newNode;
-    size++;
+    queue->size++;
 }
 
 int deQueue() {
     isEmpty();
-    LinkNode *delNode = sentinel->next;
-    sentinel->next = delNode->next;
+    LinkNode *delNode = queue->sentinel->next;
+    queue->sentinel->next = delNode->next;
     int delVal = delNode->value;
     freeNode(delNode);
-    size--;
+    queue->size--;
     return delVal;
 }
 
-int getFront(){
+int getFront() {
     isEmpty();
-    return sentinel->next->value;
+    return queue->sentinel->next->value;
 }
 
-bool isEmpty(){
-    if (size == 0) {
+bool isEmpty() {
+    if (queue->size == 0) {
         printf(" the queue is empty ...");
         exit(0);
     }
 }
 
-bool isFull(){
-    if (size == MAX_SIZE) {
+bool isFull() {
+    if (queue->size == MAX_SIZE) {
         printf("the queue is full");
         exit(0);
     }
 }
 
-int getSize(){
-    return size;
+int getSize() {
+    return queue->size;
 }
 
 void freeNode(LinkNode *delNode) {
@@ -58,7 +67,7 @@ void freeNode(LinkNode *delNode) {
 
 void output() {
     printf("start|\t");
-    LinkNode *p = sentinel->next;
+    LinkNode *p = queue->sentinel->next;
     int i = 0;
     while (p != NULL) {
         printf("%d|%d\t", i++, p->value);
