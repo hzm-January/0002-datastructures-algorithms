@@ -3,7 +3,7 @@ project(data_structure_c C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(data_structure_c 01-linear-list/02-linked-list/linknode.h 01-linear-list/linearlist.h)
+#add_executable(data_structure_c 01-linear-list/02-linked-list/linknode.h 01-linear-list/linearlist.h)
 add_executable(circular_list_with_tail 01-linear-list/02-linked-list/02-circular-list/02-circular-list-with-tail/main.c 01-linear-list/02-linked-list/linknode.h 01-linear-list/linearlist.h 01-linear-list/02-linked-list/02-circular-list/02-circular-list-with-tail/circularlistwithtail.c 01-linear-list/02-linked-list/02-circular-list/02-circular-list-with-tail/circularlistwithtail.h)
 add_executable(circular_list_josephus_problem ./01-linear-list/02-linked-list/51-josephus-problem/main.c 01-linear-list/02-linked-list/linknode.h 01-linear-list/linearlist.h 01-linear-list/02-linked-list/02-circular-list/02-circular-list-with-tail/circularlistwithtail.c 01-linear-list/02-linked-list/02-circular-list/02-circular-list-with-tail/circularlistwithtail.h)
 add_executable(doubly_linked_list_without_sentinel_c 01-linear-list/02-linked-list/03-doubly-linked-list/01-doubly-linked-list-without-sentinel/main.c 01-linear-list/02-linked-list/linknode.h 01-linear-list/linearlist.h 01-linear-list/02-linked-list/03-doubly-linked-list/01-doubly-linked-list-without-sentinel/doublylinkedlist.h 01-linear-list/02-linked-list/03-doubly-linked-list/01-doubly-linked-list-without-sentinel/doublylinkedlist.c)
@@ -293,4 +293,11 @@ add_executable(set_union_find_set
         02-nonlinear-list/06-set/01-UFSet/ufset.c
         02-nonlinear-list/06-set/01-UFSet/ufset.h
         02-nonlinear-list/06-set/01-UFSet/main.c
+        )
+add_executable(tree_binary_tree_heap
+        02-nonlinear-list/02-tree/02-binary-tree/07-heap/heap.h
+        02-nonlinear-list/02-tree/02-binary-tree/07-heap/heap.c
+        02-nonlinear-list/02-tree/02-binary-tree/07-heap/main.c
+        01-linear-list/04-queue/01-queue/02-linked-queue/linkedqueue.h
+        01-linear-list/04-queue/01-queue/02-linked-queue/linkedqueue.c
         )
