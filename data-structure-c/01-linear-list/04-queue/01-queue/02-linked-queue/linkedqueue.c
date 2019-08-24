@@ -45,6 +45,7 @@ bool isEmpty() {
         printf(" the queue is empty ...");
         exit(0);
     }
+    return false;
 }
 
 bool isFull() {
